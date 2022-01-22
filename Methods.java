@@ -59,6 +59,9 @@ public class Methods  {
 		Scanner turn = new Scanner(System.in);
 		System.out.println(player1 + " Enter Position here (1-9): ");
 		int position = turn.nextInt();
+		if(position == 1) {
+			System.out.println("This is the change");
+		}
 		while(player1Positions.contains(position) || player2Positions.contains(position))
 			{
 				System.out.print("Enter Another Position");
